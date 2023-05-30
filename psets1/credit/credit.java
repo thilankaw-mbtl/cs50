@@ -1,8 +1,20 @@
+import java.util.Scanner;
+
 class Credit{
 
     public static void main(String[] args) {
 
+        Scanner sc = new Scanner(System.in);
         long num = 4003600000000014L;
+
+        System.out.println("Enter Credit Card Number: ");
+        String userInput = sc.nextLine();
+
+        num = Long.parseLong(userInput);
+
+        sc.close();
+
+        
         long max = 100000000000000000L;
         //long num = 54003600000000014L;
 
